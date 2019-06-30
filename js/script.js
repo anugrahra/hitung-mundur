@@ -13,7 +13,15 @@ const hitungMundur = setInterval(function () {
     const detik = Math.floor(selisih % (1000 * 60) / 1000)
     
     const teks = document.getElementById('teks')
-    teks.innerHTML = '<h1>Tinggal ' + hari + ' hari ' + jam + ' jam ' + menit + ' menit ' + detik + ' detik lagi menuju tahun 2020</h1>'
+    teks.innerHTML = `
+                    <p class="utama">Tinggal<br>
+                        <span class="oren">`+ hari +`</span> hari<br>
+                        <span class="ijo">`+ jam +`</span> jam<br>
+                        <span class="biru">`+ menit +`</span> menit<br>
+                        <span class="merah">`+ detik +`</span> detik<br>
+                        menuju <span class="duapuluh">2020</span>
+                    </p>
+                    `
 
     if (selisih < 0) {
         clearInterval(hitungMundur)

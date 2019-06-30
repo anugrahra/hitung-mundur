@@ -1,0 +1,36 @@
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: white;
+}
+
+.utama {
+    font-size: 3.5em;
+}
+
+.oren {
+    color: orange;
+    font-weight: bold;
+}
+
+.ijo {
+    color: lawngreen;
+    font-weight: bold;
+}
+
+.biru {
+    color: lightblue;
+    font-weight: bold;
+}
+
+.merah {
+    color: red;
+    font-weight: bold;
+}
+
+.duapuluh {
+    font-weight: bold;
+    text-decoration: underline;
+}
