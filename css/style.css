@@ -6,6 +6,10 @@ a:hover {
     color: white;
 }
 
+#bodi {
+    background-color: black;
+}
+
 .utama {
     font-size: 3.5em;
 }

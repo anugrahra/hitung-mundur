@@ -29,3 +29,13 @@ const hitungMundur = setInterval(function () {
     }
 
 }, 1000)
+
+//ganti warna detik
+var i = 0
+function gantiWarna() {
+    var warnaDetik = document.getElementById('bodi')
+    var warna = ['black', '#3b444b', '#353839', '#232b2b', '#0e1111']
+    warnaDetik.style.backgroundColor = warna[i]
+    i = (i + 1) % warna.length
+}
+setInterval(gantiWarna, 1000)
