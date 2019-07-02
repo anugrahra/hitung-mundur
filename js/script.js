@@ -39,3 +39,37 @@ function gantiWarna() {
     i = (i + 1) % warna.length
 }
 setInterval(gantiWarna, 1000)
+
+//tgl sekarang
+const skr = new Date()
+
+//hari
+const weekday = new Array(7)
+weekday[0] = "Minggu"
+weekday[1] = "Senin"
+weekday[2] = "Selasa"
+weekday[3] = "Rabu"
+weekday[4] = "Kamis"
+weekday[5] = "Jumat"
+weekday[6] = "Sabtu"
+
+const skrHari = weekday[skr.getDay()]
+
+//bulan
+const month = new Array(12)
+month[0] = "Januari"
+month[1] = "Februari"
+month[2] = "Maret"
+month[3] = "April"
+month[4] = "Mei"
+month[5] = "Juni"
+month[6] = "Juli"
+month[7] = "Agustus"
+month[8] = "September"
+month[9] = "Oktober"
+month[10] = "November"
+month[11] = "Desember"
+
+const skrBulan = month[skr.getMonth()]
+
+document.getElementById("tglSkr").innerHTML = skrHari + ', ' + skr.getDay() + ' ' + skrBulan + ' ' + skr.getFullYear()
