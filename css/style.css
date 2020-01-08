@@ -10,6 +10,10 @@ a:hover {
     background-color: black;
 }
 
+#tglSkr {
+    text-decoration: underline;
+}
+
 .utama {
     font-size: 3.225em;
 }

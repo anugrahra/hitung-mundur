@@ -1,4 +1,4 @@
-const tanggalTujuan = new Date('Jan 1, 2020 00:00:00').getTime()
+const tanggalTujuan = new Date('Jan 1, 2021 00:00:00').getTime()
 
 const hitungMundur = setInterval(function () {
     const sekarang = new Date().getTime()
@@ -19,13 +19,13 @@ const hitungMundur = setInterval(function () {
                         <span class="ijo">`+ jam +`</span> jam<br>
                         <span class="biru">`+ menit +`</span> menit<br>
                         <span class="merah">`+ detik +`</span> detik<br>
-                        menuju <span class="duapuluh">2020</span>
+                        menuju <span class="duapuluh">2021</span>
                     </p>
                     `
 
     if (selisih < 0) {
         clearInterval(hitungMundur)
-        teks.innerHTML('Selamat Tahun Baru 2020')
+        teks.innerHTML('Selamat Tahun Baru 2021')
     }
 
 }, 1000)
